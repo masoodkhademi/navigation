@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/size_header_height"
+    tools:ignore="RtlHardcoded"
+    tools:showIn="@layout/jahedmanesh_view_navigation">
+
+    <ImageView
+        android:id="@+id/imgCover"
+        style="@style/Image.Header.Cover"
+        tools:src="@tools:sample/backgrounds/scenic"/>
+
+    <ImageView
+        android:id="@+id/imgAvatarMain"
+        style="@style/Image.Header.Profile.Main.Left"
+        tools:src="@tools:sample/avatars"/>
+
+    <ImageView
+        android:id="@+id/imgAvatarSecond"
+        style="@style/Image.Header.Profile.Secondary.Left"
+        tools:src="@tools:sample/avatars"/>
+
+    <ImageView
+        android:id="@+id/imgAvatarThird"
+        style="@style/Image.Header.Profile.Secondary.Left"
+        android:layout_alignParentRight="false"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_toLeftOf="@+id/imgAvatarSecond"
+        tools:src="@tools:sample/avatars"/>
+
+    <LinearLayout
+        android:id="@+id/containerText"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/content_header"
+        android:layout_below="@+id/imgAvatarMain"
+        android:layout_marginBottom="@dimen/content_areas"
+        android:layout_marginLeft="@dimen/margin_edge"
+        android:layout_marginTop="@dimen/content_areas"
+        android:layout_toLeftOf="@+id/imgArrow"
+        android:gravity="left|center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            style="@style/Text.Header.Title.Left"
+            tools:text="@tools:sample/first_names"/>
+
+        <TextView
+            android:id="@+id/tvSubTitle"
+            style="@style/Text.Header.SubTitle.Left"
+            tools:text="@tools:sample/last_names"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imgArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/containerText"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="@dimen/margin_edge"
+        android:layout_marginRight="@dimen/margin_edge"
+        app:srcCompat="@drawable/ic_arrow_drop_down_black_35dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<resources>
+
+    <declare-styleable name="NavigationView">
+        <attr name="contentGravity" format="enum">
+            <enum name="left" value="100"/>
+            <enum name="right" value="200"/>
+            <enum name="auto" value="300"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="HeaderView">
+    </declare-styleable>
+
+</resources>

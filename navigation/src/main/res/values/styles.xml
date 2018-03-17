@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+
+    // Texts
+
+    <style name="Text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="Text.ListItem">
+        <item name="android:textSize">@dimen/font_list_item</item>
+        <item name="android:textColor">@color/color_list_item</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="Text.ListItem.Auto">
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_alignParentStart" tools:ignore="NewApi">true</item>
+        <item name="android:layout_marginLeft">@dimen/margin_list_item</item>
+        <item name="android:layout_marginStart" tools:ignore="NewApi">@dimen/margin_list_item</item>
+        <item name="android:layout_marginRight">@dimen/margin_edge</item>
+        <item name="android:layout_marginEnd" tools:ignore="NewApi">@dimen/margin_edge</item>
+        <item name="android:gravity">start</item>
+    </style>
+
+    <style name="Text.ListItem.Left">
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_marginLeft">@dimen/margin_list_item</item>
+        <item name="android:layout_marginRight">@dimen/margin_edge</item>
+        <item name="android:gravity">left</item>
+    </style>
+
+    <style name="Text.ListItem.Right">
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginLeft">@dimen/margin_edge</item>
+        <item name="android:layout_marginRight">@dimen/margin_list_item</item>
+        <item name="android:gravity">right</item>
+    </style>
+
+    <style name="Text.Header">
+    </style>
+
+    <style name="Text.Header.Title">
+        <item name="android:textSize">@dimen/font_header_title</item>
+        <item name="android:textColor">@color/color_header_title</item>
+    </style>
+
+    <style name="Text.Header.Title.Auto">
+        <item name="android:gravity">start</item>
+    </style>
+
+    <style name="Text.Header.Title.Left">
+    </style>
+
+    <style name="Text.Header.Title.Right">
+    </style>
+
+    <style name="Text.Header.SubTitle">
+        <item name="android:textSize">@dimen/font_header_sub_title</item>
+        <item name="android:textColor">@color/color_header_sub_title</item>
+    </style>
+
+    <style name="Text.Header.SubTitle.Auto">
+        <item name="android:gravity">start</item>
+    </style>
+
+    <style name="Text.Header.SubTitle.Left">
+        <item name="android:gravity">left</item>
+    </style>
+
+    <style name="Text.Header.SubTitle.Right">
+        <item name="android:gravity">right</item>
+    </style>
+
+    // Images
+
+    <style name="Image"/>
+
+    <style name="Image.ListItem">
+        <item name="android:layout_width">@dimen/size_img_list_item</item>
+        <item name="android:layout_height">@dimen/size_img_list_item</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="Image.ListItem.Auto">
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_alignParentStart" tools:ignore="NewApi">true</item>
+        <item name="android:layout_marginLeft">@dimen/margin_edge</item>
+        <item name="android:layout_marginStart" tools:ignore="NewApi">@dimen/margin_edge</item>
+    </style>
+
+    <style name="Image.ListItem.Left">
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_marginLeft">@dimen/margin_edge</item>
+    </style>
+
+    <style name="Image.ListItem.Right">
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginRight">@dimen/margin_edge</item>
+    </style>
+
+    <style name="Image.Header"/>
+
+    <style name="Image.Header.Cover">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:scaleType">center</item>
+    </style>
+
+    <style name="Image.Header.Profile">
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_marginTop">@dimen/margin_header_top</item>
+    </style>
+
+    <style name="Image.Header.Profile.Main">
+        <item name="android:layout_width">@dimen/size_img_header_profile_main</item>
+        <item name="android:layout_height">@dimen/size_img_header_profile_main</item>
+    </style>
+
+    <style name="Image.Header.Profile.Main.Auto">
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_alignParentStart" tools:ignore="NewApi">true</item>
+        <item name="android:layout_marginLeft">@dimen/margin_edge</item>
+        <item name="android:layout_marginStart" tools:ignore="NewApi">@dimen/margin_edge</item>
+    </style>
+
+    <style name="Image.Header.Profile.Main.Left">
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_marginLeft">@dimen/margin_edge</item>
+    </style>
+
+    <style name="Image.Header.Profile.Main.Right">
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginRight">@dimen/margin_edge</item>
+    </style>
+
+    <style name="Image.Header.Profile.Secondary">
+        <item name="android:layout_width">@dimen/size_img_header_profile_secondary</item>
+        <item name="android:layout_height">@dimen/size_img_header_profile_secondary</item>
+    </style>
+
+    <style name="Image.Header.Profile.Secondary.Auto">
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_alignParentEnd" tools:ignore="NewApi">true</item>
+        <item name="android:layout_marginLeft">@dimen/margin_edge</item>
+        <item name="android:layout_marginRight">@dimen/margin_edge</item>
+    </style>
+
+    <style name="Image.Header.Profile.Secondary.Left">
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginLeft">@dimen/margin_edge</item>
+        <item name="android:layout_marginRight">@dimen/margin_edge</item>
+    </style>
+
+    <style name="Image.Header.Profile.Secondary.Right">
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_marginLeft">@dimen/margin_edge</item>
+        <item name="android:layout_marginRight">@dimen/margin_edge</item>
+    </style>
+
+</resources>
