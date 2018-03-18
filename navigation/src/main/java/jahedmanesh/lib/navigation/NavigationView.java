@@ -9,6 +9,7 @@ import android.support.v7.widget.RecyclerView;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
@@ -34,6 +35,7 @@ public class NavigationView extends RelativeLayout implements ProfileManager.Pro
     private HeaderView headerView;
     private RecyclerView containerItems;
     private RecyclerView containerProfiles;
+    private FrameLayout navigationFooter;
 
     private ItemAdapter itemAdapter;
     private ProfileAdapter profileAdapter;
@@ -80,6 +82,7 @@ public class NavigationView extends RelativeLayout implements ProfileManager.Pro
         profileAdapter = new ProfileAdapter(contentGravity);
         containerProfiles.setAdapter(profileAdapter);
 
+        navigationFooter = navigationView.findViewById(R.id.navigationFooter);
     }
 
     public int getContentGravity() {
@@ -184,6 +187,21 @@ public class NavigationView extends RelativeLayout implements ProfileManager.Pro
             containerItems.setVisibility(GONE);
             containerProfiles.setVisibility(VISIBLE);
         }
+    }
+
+    // Footer
+
+    public void setFooter(View footer) {
+        navigationFooter.removeAllViews();
+        navigationFooter.addView(footer);
+    }
+
+    public void showFooter() {
+        navigationFooter.setVisibility(VISIBLE);
+    }
+
+    public void hideFooter(){
+        navigationFooter.setVisibility(GONE);
     }
 
     public interface MenuListCallback {

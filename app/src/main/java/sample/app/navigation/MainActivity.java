@@ -9,6 +9,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -163,6 +164,10 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         navigation.enableHeader();
+
+        TextView footerView = (TextView) getLayoutInflater().inflate(R.layout.layout_footer, null);
+        footerView.setText("Footer");
+        navigation.setFooter(footerView);
 
     }
 
