@@ -70,6 +70,9 @@ public class HeaderView extends FrameLayout implements ProfileManager.ProfileEve
                 }
             });
             imgAvatarMain.setOnLongClickListener(view -> {
+                if (profileHeaderCallback != null) {
+                    profileHeaderCallback.onProfileLongClicked(mainProfile);
+                }
                 return true;
             });
 
@@ -80,6 +83,9 @@ public class HeaderView extends FrameLayout implements ProfileManager.ProfileEve
                 }
             });
             imgAvatarSecond.setOnLongClickListener(view -> {
+                if (profileHeaderCallback != null) {
+                    profileHeaderCallback.onProfileLongClicked(secondProfile);
+                }
                 return true;
             });
 
@@ -90,6 +96,9 @@ public class HeaderView extends FrameLayout implements ProfileManager.ProfileEve
                 }
             });
             imgAvatarThird.setOnLongClickListener(view -> {
+                if (profileHeaderCallback != null) {
+                    profileHeaderCallback.onProfileLongClicked(thirdProfile);
+                }
                 return true;
             });
 
