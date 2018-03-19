@@ -7,11 +7,11 @@ import android.graphics.Color;
  * Email : 47even@gmail.com
  */
 
-public class DividerItem extends Item {
+public class NavDividerItem extends NavItem {
 
     private int dividerColor = Color.BLACK;
 
-    public DividerItem(long id) {
+    public NavDividerItem(long id) {
         super(id);
     }
 
@@ -19,7 +19,7 @@ public class DividerItem extends Item {
         return dividerColor;
     }
 
-    public DividerItem setDividerColor(int dividerColor) {
+    public NavDividerItem setDividerColor(int dividerColor) {
         this.dividerColor = dividerColor;
         return this;
     }

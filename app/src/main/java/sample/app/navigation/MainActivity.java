@@ -17,9 +17,9 @@ import java.util.List;
 import jahedmanesh.lib.navigation.NavigationView;
 import jahedmanesh.lib.navigation.Profile;
 import jahedmanesh.lib.navigation.ProfileManager;
-import jahedmanesh.lib.navigation.item.DividerItem;
-import jahedmanesh.lib.navigation.item.Item;
-import jahedmanesh.lib.navigation.item.MenuItem;
+import jahedmanesh.lib.navigation.item.NavDividerItem;
+import jahedmanesh.lib.navigation.item.NavItem;
+import jahedmanesh.lib.navigation.item.NavMenuItem;
 
 /**
  * Created by Mehdi Jahed Manesh on 2/28/18 at 10:58 PM.
@@ -36,23 +36,23 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         drawerLayout = findViewById(R.id.drawerLayout);
-        drawerLayout.setScrimColor(Color.parseColor("#FF0EDF81"));
+        drawerLayout.setScrimColor(Color.parseColor("#50000000"));
 
-        MenuItem menuItem1 = new MenuItem(1, "Hey");
+        NavMenuItem menuItem1 = new NavMenuItem(1, "Hey");
         menuItem1.setIcon(R.drawable.ic_audiotrack_black_24dp);
-        MenuItem menuItem2 = new MenuItem(2, "Bye");
+        NavMenuItem menuItem2 = new NavMenuItem(2, "Bye");
         menuItem2.setIcon(R.drawable.ic_backup_black_24dp);
-        MenuItem menuItem3 = new MenuItem(3, "Why");
+        NavMenuItem menuItem3 = new NavMenuItem(3, "Why");
         menuItem3.setIcon(R.drawable.ic_build_black_24dp);
-        MenuItem menuItem4 = new MenuItem(4, "Who");
+        NavMenuItem menuItem4 = new NavMenuItem(4, "Who");
         menuItem4.setIcon(R.drawable.ic_face_black_24dp);
 
-        DividerItem dividerItem1 = new DividerItem(5);
+        NavDividerItem dividerItem1 = new NavDividerItem(5);
         dividerItem1.setDividerColor(Color.GREEN);
-        DividerItem dividerItem2 = new DividerItem(6);
+        NavDividerItem dividerItem2 = new NavDividerItem(6);
         dividerItem2.setDividerColor(Color.RED);
 
-        List<Item> items = new ArrayList<>();
+        List<NavItem> items = new ArrayList<>();
         items.add(menuItem1);
         items.add(menuItem2);
         items.add(dividerItem1);
@@ -63,12 +63,12 @@ public class MainActivity extends AppCompatActivity {
         NavigationView navigation = findViewById(R.id.navigation);
         navigation.setMenuItemCallback(new NavigationView.MenuListCallback() {
             @Override
-            public void onMenuItemClicked(View row, MenuItem item, int position) {
+            public void onMenuItemClicked(View row, NavMenuItem item, int position) {
                 Log.i("====>", "onMenuItemClicked: ");
             }
 
             @Override
-            public void onMenuItemLongClicked(View row, MenuItem item, int position) {
+            public void onMenuItemLongClicked(View row, NavMenuItem item, int position) {
                 Log.i("====>", "onMenuItemLongClicked: ");
             }
         });

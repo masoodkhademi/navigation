@@ -8,14 +8,14 @@ import android.support.annotation.NonNull;
  * Email : 47even@gmail.com
  */
 
-public class MenuItem extends Item {
+public class NavMenuItem extends NavItem {
 
     @NonNull
     private String title;
     private int icon;
     private int titleColor = Color.BLACK;
 
-    public MenuItem(long id, @NonNull String title) {
+    public NavMenuItem(long id, @NonNull String title) {
         super(id);
         this.title = title;
     }
@@ -25,7 +25,7 @@ public class MenuItem extends Item {
         return title;
     }
 
-    public MenuItem setTitle(@NonNull String title) {
+    public NavMenuItem setTitle(@NonNull String title) {
         this.title = title;
         return this;
     }
@@ -34,7 +34,7 @@ public class MenuItem extends Item {
         return icon;
     }
 
-    public MenuItem setIcon(int icon) {
+    public NavMenuItem setIcon(int icon) {
         this.icon = icon;
         return this;
     }
@@ -43,11 +43,9 @@ public class MenuItem extends Item {
         return titleColor;
     }
 
-    public MenuItem setTitleColor(int titleColor) {
+    public NavMenuItem setTitleColor(int titleColor) {
         this.titleColor = titleColor;
         return this;
     }
-
-
 
 }

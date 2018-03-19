@@ -18,8 +18,8 @@ import java.lang.annotation.RetentionPolicy;
 import java.util.Hashtable;
 import java.util.List;
 
-import jahedmanesh.lib.navigation.item.Item;
-import jahedmanesh.lib.navigation.item.MenuItem;
+import jahedmanesh.lib.navigation.item.NavItem;
+import jahedmanesh.lib.navigation.item.NavMenuItem;
 
 public class NavigationView extends RelativeLayout implements ProfileManager.ProfileEventChanged {
 
@@ -40,7 +40,7 @@ public class NavigationView extends RelativeLayout implements ProfileManager.Pro
     private ItemAdapter itemAdapter;
     private ProfileAdapter profileAdapter;
 
-    private Hashtable<Long, Item> itemHashTable;
+    private Hashtable<Long, NavItem> itemHashTable;
 
     public NavigationView(Context context) {
         this(context, null, 0);
@@ -74,7 +74,7 @@ public class NavigationView extends RelativeLayout implements ProfileManager.Pro
 
         itemHashTable = new Hashtable<>();
 
-        // Set Item to adapter
+        // Set NavItem to adapter
         itemAdapter = new ItemAdapter(contentGravity );
         containerItems.setAdapter(itemAdapter);
 
@@ -95,9 +95,9 @@ public class NavigationView extends RelativeLayout implements ProfileManager.Pro
         itemAdapter.setMenuItemCallback(menuItemCallback);
     }
 
-    public void replaceItems(List<Item> items) {
+    public void replaceItems(List<NavItem> items) {
         itemHashTable.clear();
-        for (Item item : items) {
+        for (NavItem item : items) {
             itemHashTable.put(item.getId(), item);
         }
         itemAdapter.replace(items);
@@ -107,7 +107,7 @@ public class NavigationView extends RelativeLayout implements ProfileManager.Pro
         itemAdapter.refresh();
     }
 
-    public void removeItem(@NonNull Item item) {
+    public void removeItem(@NonNull NavItem item) {
         if (itemAdapter.remove(item)) {
             itemHashTable.remove(item.getId());
         }
@@ -115,13 +115,13 @@ public class NavigationView extends RelativeLayout implements ProfileManager.Pro
 
     public void removeItem(int position) {
         if (position >= 0) {
-            Item removedItem = itemAdapter.remove(position);
+            NavItem removedItem = itemAdapter.remove(position);
             itemHashTable.remove(removedItem.getId());
         }
     }
 
     @Nullable
-    public Item getItem(long id) {
+    public NavItem getItem(long id) {
         return itemHashTable.get(id);
     }
 
@@ -205,8 +205,8 @@ public class NavigationView extends RelativeLayout implements ProfileManager.Pro
     }
 
     public interface MenuListCallback {
-        void onMenuItemClicked(View row, MenuItem item, int position);
-        void onMenuItemLongClicked(View row, MenuItem item, int position);
+        void onMenuItemClicked(View row, NavMenuItem item, int position);
+        void onMenuItemLongClicked(View row, NavMenuItem item, int position);
     }
 
     public interface ProfileListCallback {

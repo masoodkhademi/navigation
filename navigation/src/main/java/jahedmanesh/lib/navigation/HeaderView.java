@@ -132,12 +132,12 @@ public class HeaderView extends FrameLayout implements ProfileManager.ProfileEve
 
     @Override
     public void defaultProfileRemoved(ProfileManager profileManager, Profile profile) {
-
+        // TODO: 3/18/18
     }
 
     @Override
     public void profileRemoved(ProfileManager profileManager, Profile profile) {
-
+        // TODO: 3/18/18
     }
 
     @Override

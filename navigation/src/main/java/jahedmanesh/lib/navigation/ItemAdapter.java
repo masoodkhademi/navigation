@@ -11,9 +11,9 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 
-import jahedmanesh.lib.navigation.item.DividerItem;
-import jahedmanesh.lib.navigation.item.Item;
-import jahedmanesh.lib.navigation.item.MenuItem;
+import jahedmanesh.lib.navigation.item.NavDividerItem;
+import jahedmanesh.lib.navigation.item.NavItem;
+import jahedmanesh.lib.navigation.item.NavMenuItem;
 
 /**
  * Created by Mehdi Jahed Manesh on 2/28/18 at 5:57 PM.
@@ -26,7 +26,7 @@ public class ItemAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     final int TYPE_ITEM_DIVIDER = 100;
     final int TYPE_ITEM_MENU = 101;
 
-    private List<Item> items = new ArrayList<>();
+    private List<NavItem> items = new ArrayList<>();
     private int contentGravity;
     @Nullable
     private NavigationView.MenuListCallback menuItemCallback;
@@ -68,7 +68,7 @@ public class ItemAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
 
         if (holder instanceof MenuItemViewHolder) {
-            MenuItem menuItem = (MenuItem) items.get(position);
+            NavMenuItem menuItem = (NavMenuItem) items.get(position);
             ((MenuItemViewHolder) holder).imgIcon.setImageResource(menuItem.getIcon());
             ((MenuItemViewHolder) holder).tvTitle.setText(menuItem.getTitle());
 
@@ -86,7 +86,7 @@ public class ItemAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
             });
 
         }  else {
-            DividerItem dividerItem = (DividerItem) items.get(position);
+            NavDividerItem dividerItem = (NavDividerItem) items.get(position);
             ((DividerItemViewHolder) holder).itemDivider.setBackgroundColor(dividerItem.getDividerColor());
         }
 
@@ -94,8 +94,8 @@ public class ItemAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
     @Override
     public int getItemViewType(int position) {
-        Item item = items.get(position);
-        if (item instanceof MenuItem) {
+        NavItem item = items.get(position);
+        if (item instanceof NavMenuItem) {
             return TYPE_ITEM_MENU;
         } else {
             return TYPE_ITEM_DIVIDER;
@@ -107,20 +107,20 @@ public class ItemAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         return items != null ? items.size() : 0;
     }
 
-    public void replace(List<Item> items) {
+    public void replace(List<NavItem> items) {
         this.items.clear();
         this.items.addAll(items);
         refresh();
     }
 
-    public boolean remove(Item item) {
+    public boolean remove(NavItem item) {
         boolean isRemoved = items.remove(item);
         refresh();
         return isRemoved;
     }
 
-    public Item remove(int position) {
-        Item removedItem = items.remove(position);
+    public NavItem remove(int position) {
+        NavItem removedItem = items.remove(position);
         refresh();
         return removedItem;
     }
