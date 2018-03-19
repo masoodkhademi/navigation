@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <color name="color_default_cover">#948d8d</color>
+    <color name="color_navigation_background">#FFFFFF</color>
+    <color name="color_navigation_header_cover">#EEEEEE</color>
 
     <color name="color_header_title">#FFFFFF</color>
     <color name="color_header_sub_title">#FFFFFF</color>
 
-    <color name="color_list_item">#87000000</color> // 87% #000000
+    <color name="color_list_item">#dd000000</color> // 87% #000000
 
-    <color name="color_divider_text">#54000000</color> //  54% #000000
-    <color name="color_divider_line">#30000000</color> //  30% #000000
+    <color name="color_sub_header">#89000000</color> //  54% #000000
+    <color name="color_divider_line">#4c000000</color> //  30% #000000
 
 </resources>
