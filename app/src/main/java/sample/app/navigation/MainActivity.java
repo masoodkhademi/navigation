@@ -20,6 +20,7 @@ import jahedmanesh.lib.navigation.ProfileManager;
 import jahedmanesh.lib.navigation.item.NavDividerItem;
 import jahedmanesh.lib.navigation.item.NavItem;
 import jahedmanesh.lib.navigation.item.NavMenuItem;
+import jahedmanesh.lib.navigation.item.NavSubHeaderItem;
 
 /**
  * Created by Mehdi Jahed Manesh on 2/28/18 at 10:58 PM.
@@ -48,16 +49,19 @@ public class MainActivity extends AppCompatActivity {
         menuItem4.setIcon(R.drawable.ic_face_black_24dp);
 
         NavDividerItem dividerItem1 = new NavDividerItem(5);
-        dividerItem1.setDividerColor(Color.GREEN);
         NavDividerItem dividerItem2 = new NavDividerItem(6);
-        dividerItem2.setDividerColor(Color.RED);
+
+        NavSubHeaderItem subHeaderItem1 = new NavSubHeaderItem(7, "Damn Header 1");
+        NavSubHeaderItem subHeaderItem2 = new NavSubHeaderItem(8, "Damn Header 2");
 
         List<NavItem> items = new ArrayList<>();
         items.add(menuItem1);
         items.add(menuItem2);
+        items.add(subHeaderItem2);
         items.add(dividerItem1);
         items.add(menuItem3);
         items.add(dividerItem2);
+        items.add(subHeaderItem1);
         items.add(menuItem4);
 
         NavigationView navigation = findViewById(R.id.navigation);

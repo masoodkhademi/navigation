@@ -40,6 +40,36 @@
         <item name="android:gravity">right</item>
     </style>
 
+    <style name="Text.SubHeader">
+        <item name="android:textSize">@dimen/font_sub_header</item>
+        <item name="android:textColor">@color/color_sub_header</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="Text.SubHeader.Auto">
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_alignParentStart" tools:ignore="NewApi">true</item>
+        <item name="android:layout_marginLeft">@dimen/margin_edge</item>
+        <item name="android:layout_marginStart" tools:ignore="NewApi">@dimen/margin_edge</item>
+        <item name="android:layout_marginRight">@dimen/margin_edge</item>
+        <item name="android:layout_marginEnd" tools:ignore="NewApi">@dimen/margin_edge</item>
+        <item name="android:gravity">start</item>
+    </style>
+
+    <style name="Text.SubHeader.Left">
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_marginLeft">@dimen/margin_edge</item>
+        <item name="android:layout_marginRight">@dimen/margin_edge</item>
+        <item name="android:gravity">left</item>
+    </style>
+
+    <style name="Text.SubHeader.Right">
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginLeft">@dimen/margin_edge</item>
+        <item name="android:layout_marginRight">@dimen/margin_edge</item>
+        <item name="android:gravity">right</item>
+    </style>
+
     <style name="Text.Header">
     </style>
 
@@ -108,6 +138,7 @@
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
         <item name="android:scaleType">center</item>
+        <item name="android:colorBackground">@color/color_navigation_header_cover</item>
     </style>
 
     <style name="Image.Header.Profile">

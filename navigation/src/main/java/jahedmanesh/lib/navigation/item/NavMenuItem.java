@@ -1,6 +1,5 @@
 package jahedmanesh.lib.navigation.item;
 
-import android.graphics.Color;
 import android.support.annotation.NonNull;
 
 /**
@@ -13,11 +12,16 @@ public class NavMenuItem extends NavItem {
     @NonNull
     private String title;
     private int icon;
-    private int titleColor = Color.BLACK;
 
     public NavMenuItem(long id, @NonNull String title) {
         super(id);
         this.title = title;
+    }
+
+    public NavMenuItem(long id, @NonNull String title, int icon) {
+        super(id);
+        this.title = title;
+        this.icon = icon;
     }
 
     @NonNull
@@ -36,15 +40,6 @@ public class NavMenuItem extends NavItem {
 
     public NavMenuItem setIcon(int icon) {
         this.icon = icon;
-        return this;
-    }
-
-    public int getTitleColor() {
-        return titleColor;
-    }
-
-    public NavMenuItem setTitleColor(int titleColor) {
-        this.titleColor = titleColor;
         return this;
     }
 
