@@ -10,11 +10,18 @@
 
     <!-- Add FrameLayout -->
     <!-- NEW CODE STRART-->
-    <FrameLayout
+    <RelativeLayout
         android:id="@+id/frame_content"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#123123"/>
+        android:background="#123123">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onChange"/>
+
+    </RelativeLayout>
     <!-- NEW CODE END-->
 
     <jahedmanesh.lib.navigation.NavigationView

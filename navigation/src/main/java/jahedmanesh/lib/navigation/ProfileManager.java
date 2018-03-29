@@ -125,6 +125,7 @@ public class ProfileManager {
         for (Profile profileItem : profileItems) {
             this.profileItems.put(profileItem.getId(), profileItem);
         }
+        refresh();
     }
 
     public List<Profile> getProfileItemsExceptDefault() {

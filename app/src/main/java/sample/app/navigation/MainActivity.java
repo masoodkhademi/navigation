@@ -92,34 +92,13 @@ public class MainActivity extends AppCompatActivity {
         profile2.setAvatarIcon(R.drawable.ic_backup_black_24dp);
         profile2.setCoverDrawable(colorDrawable);
 
-        colorDrawable = new ColorDrawable();
-        colorDrawable.setColor(Color.GRAY);
-
-        Profile profile3 = new Profile(3,"se");
-        profile3.setAvatarIcon(R.drawable.ic_build_black_24dp);
-        profile3.setCoverDrawable(colorDrawable);
-
-        colorDrawable = new ColorDrawable();
-        colorDrawable.setColor(Color.CYAN);
-
-        Profile profile4 = new Profile(4,"char");
-        profile4.setAvatarIcon(R.drawable.ic_audiotrack_black_24dp);
-        profile4.setCoverDrawable(colorDrawable);
-
-        colorDrawable = new ColorDrawable();
-        colorDrawable.setColor(Color.MAGENTA);
-
-        Profile profile5 = new Profile(5,"pan");
-        profile5.setAvatarIcon(R.mipmap.ic_launcher_round);
-        profile5.setCoverDrawable(colorDrawable);
+        List<Profile> profiles = new ArrayList<>();
+        profiles.add(profile1);
+        profiles.add(profile2);
 
         ProfileManager profileManager = ProfileManager.getInstance();
 
-        profileManager.addProfileItem(profile1);
-        profileManager.addProfileItem(profile2);
-        profileManager.addProfileItem(profile3);
-        profileManager.addProfileItem(profile4);
-        profileManager.addProfileItem(profile5);
+        profileManager.setProfileItems(profiles);
 
         profileManager.setDefault(profile1);
 
@@ -175,4 +154,26 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    public void onChange(View view) {
+
+        Profile profile3 = new Profile(3,"se");
+        profile3.setAvatarIcon(R.drawable.ic_build_black_24dp);
+
+//        Profile profile4 = new Profile(4,"char");
+//        profile4.setAvatarIcon(R.drawable.ic_audiotrack_black_24dp);
+//
+//        Profile profile5 = new Profile(5,"pan");
+//        profile5.setAvatarIcon(R.mipmap.ic_launcher_round);
+
+        List<Profile> profiles = new ArrayList<>();
+
+        ProfileManager profileManager = ProfileManager.getInstance();
+
+        profiles.add(profile3);
+//        profiles.add(profile4);
+//        profiles.add(profile5);
+
+        profileManager.setProfileItems(profiles);
+        profileManager.setDefault(profile3);
+    }
 }

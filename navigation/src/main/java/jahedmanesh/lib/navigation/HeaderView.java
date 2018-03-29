@@ -153,6 +153,9 @@ public class HeaderView extends FrameLayout implements ProfileManager.ProfileEve
             mainProfile = defaultProfile;
         }
 
+        secondProfile = null;
+        thirdProfile = null;
+
         List<Profile> profileItems = ProfileManager.getInstance().getProfileItemsExceptDefault();
         for (int i = 0; i < profileItems.size(); i++) {
             Profile profile = profileItems.get(i);
@@ -179,12 +182,18 @@ public class HeaderView extends FrameLayout implements ProfileManager.ProfileEve
             if (profileImageLoaderCallBack != null) {
                 profileImageLoaderCallBack.onProfileAvatarLoading(imgAvatarSecond, secondProfile);
             }
+            imgAvatarSecond.setVisibility(VISIBLE);
+        } else {
+            imgAvatarSecond.setVisibility(GONE);
         }
 
         if (thirdProfile != null) {
             if (profileImageLoaderCallBack != null) {
                 profileImageLoaderCallBack.onProfileAvatarLoading(imgAvatarThird, thirdProfile);
             }
+            imgAvatarThird.setVisibility(VISIBLE);
+        } else {
+            imgAvatarThird.setVisibility(GONE);
         }
 
     }
