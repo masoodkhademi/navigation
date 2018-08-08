@@ -31,7 +31,7 @@ public class HeaderTest {
         oldList.add(item4);
         oldList.add(item5);
 
-        ProfileManager header = new ProfileManager();
+        ProfileManager header = ProfileManager.getInstance();
         header.setProfileItems(oldList);
 
         List<Profile> newList = header.getProfileItems();
@@ -55,7 +55,7 @@ public class HeaderTest {
         oldList.add(item2);
         oldList.add(item1);
 
-        ProfileManager header = new ProfileManager();
+        ProfileManager header = ProfileManager.getInstance();
         header.setProfileItems(oldList);
 
         List<Profile> newList = header.getProfileItems();
@@ -89,7 +89,7 @@ public class HeaderTest {
         oldList.add(item4);
         oldList.add(item5);
 
-        ProfileManager header = new ProfileManager();
+        ProfileManager header = ProfileManager.getInstance();
         header.setProfileItems(oldList);
 
         header.setDefault(item4);
@@ -122,7 +122,7 @@ public class HeaderTest {
         oldList.add(item4);
         oldList.add(item5);
 
-        ProfileManager header = new ProfileManager();
+        ProfileManager header = ProfileManager.getInstance();
         header.setProfileItems(oldList);
 
         header.setDefault(item4);
