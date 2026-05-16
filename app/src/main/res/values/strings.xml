@@ -1,0 +1,121 @@
+<resources>
+    <string name="app_name">ماینو بانک</string>
+
+    <!-- Splash -->
+    <string name="app_name_fa">ماینو بانک</string>
+    <string name="tagline">بانکداری هوشمند</string>
+
+    <!-- Login -->
+    <string name="login_header">ورود به ماینو بانک</string>
+    <string name="phone_hint">شماره موبایل</string>
+    <string name="phone_prefix">+۹۸</string>
+    <string name="btn_continue">ادامه</string>
+    <string name="register_prompt">ثبت نام</string>
+    <string name="new_user_prompt">کاربر جدید هستید؟</string>
+
+    <!-- Home Screen -->
+    <string name="home_title">ماینو بانک</string>
+    <string name="balance_label">موجودی</string>
+    <string name="balance_amount">۱۲۳،۵۴۳،۰۰۰</string>
+    <string name="balance_currency">تومان</string>
+    <string name="user_name">علی رضایی</string>
+    <string name="action_transfer">انتقال</string>
+    <string name="action_receive">دریافت</string>
+    <string name="action_history">تاریخچه</string>
+    <string name="recent_transactions">تراکنش‌های اخیر</string>
+    <string name="see_all">مشاهده همه</string>
+
+    <!-- Wallet Screen -->
+    <string name="wallet_title">کیف پول ماینو</string>
+    <string name="wallet_card_title">کارت پول ماینو</string>
+    <string name="wallet_balance_label">موجودی ارزیابی</string>
+    <string name="wallet_transfer">انتقال کیف</string>
+    <string name="wallet_receive">دریافت</string>
+    <string name="wallet_charge">شارژ کیف</string>
+    <string name="qr_section_title">کد QR حساب شما</string>
+    <string name="account_number">IR۱۲۰۳۴۰۶۵۸۰۰۰۰۰۱۰۰۶۰۱۳۷۵۲۳</string>
+
+    <!-- Services Screen -->
+    <string name="services_title">خدمات ماینو</string>
+    <string name="service_charge">خرید شارز</string>
+    <string name="service_transfer">حواله</string>
+    <string name="service_package">خرید بسته</string>
+    <string name="service_loan">وام</string>
+    <string name="service_insurance">بیمه</string>
+    <string name="service_bill">قبض</string>
+    <string name="service_card">کارت</string>
+    <string name="service_gold">طلا</string>
+    <string name="service_more">بیشتر</string>
+
+    <!-- Investment Screen -->
+    <string name="investment_title">سرمایه‌گذاری</string>
+    <string name="investment_card_title">انواع سرمایه‌گذاری در ماینو</string>
+    <string name="investment_gold_title">سرمایه‌گذاری طلا</string>
+    <string name="investment_gold_desc">با خرید طلای دیجیتال در ماینو سرمایه خود را حفظ کنید</string>
+    <string name="investment_fund_title">صندوق سرمایه‌گذاری</string>
+    <string name="investment_fund_desc">با سرمایه‌گذاری در صندوق‌های معتبر بازدهی بالا داشته باشید</string>
+
+    <!-- Profile Screen -->
+    <string name="profile_title">حساب کاربری</string>
+    <string name="user_phone">+۹۸ ۹۱۲ ۳۴۵ ۶۷۸۹</string>
+    <string name="user_initials">ع.ر</string>
+    <string name="user_email">ali.rezaei@email.com</string>
+    <string name="profile_identity">احراز هویت</string>
+    <string name="profile_tools">ابزارهای کاربر</string>
+    <string name="profile_security">امنیت اطلاعات کاربر</string>
+    <string name="profile_tickets">تیکت‌های پشتیبانی</string>
+    <string name="profile_rules">قوانین و مقررات</string>
+    <string name="profile_banking_hours">ساعت‌های بانکی</string>
+    <string name="profile_logout">خروج از حساب کاربری</string>
+
+    <!-- Bottom Navigation -->
+    <string name="nav_home">ماینو</string>
+    <string name="nav_wallet">کیف پول</string>
+    <string name="nav_services">خدمات</string>
+    <string name="nav_investment">سرمایه‌گذاری</string>
+    <string name="nav_profile">حساب</string>
+
+    <!-- Legacy strings kept for data layer -->
+    <string name="mineo">ماینو</string>
+    <string name="home">ماینو</string>
+    <string name="history">تاریخچه</string>
+    <string name="profile">حساب</string>
+    <string name="my_cards">کیف پول</string>
+    <string name="transactions">تراکنش‌ها</string>
+    <string name="send">انتقال</string>
+    <string name="receive">دریافت</string>
+    <string name="pay">پرداخت</string>
+    <string name="more">بیشتر</string>
+    <string name="income">درآمد</string>
+    <string name="expense">هزینه</string>
+    <string name="total_income">۴،۳۵۰،۰۰۰ تومان</string>
+    <string name="total_expense">۱،۷۷۰،۰۰۰ تومان</string>
+    <string name="balance">۱۲۳،۵۴۳،۰۰۰ تومان</string>
+    <string name="quick_actions">عملیات سریع</string>
+    <string name="total_balance">موجودی کل</string>
+    <string name="card_number_masked">IR۱۲۰۳۴۰۶۵۸۰۰۰۱۰۰۶</string>
+    <string name="greeting_morning">سلام،</string>
+    <string name="premium_member">کاربر ویژه</string>
+    <string name="personal_information">احراز هویت</string>
+    <string name="notifications">ابزارهای کاربر</string>
+    <string name="security">امنیت اطلاعات</string>
+    <string name="help_center">تیکت‌های پشتیبانی</string>
+    <string name="log_out">خروج از حساب کاربری</string>
+    <string name="account_section">قوانین و مقررات</string>
+    <string name="support_section">ساعت‌های بانکی</string>
+    <string name="card_controls">کنترل کارت</string>
+    <string name="freeze_card">مسدود کردن کارت</string>
+    <string name="change_pin">تغییر رمز</string>
+    <string name="card_limit">سقف تراکنش</string>
+    <string name="card_details">جزئیات کارت</string>
+    <string name="debit_card">DEBIT</string>
+    <string name="card_holder_label">CARD HOLDER</string>
+    <string name="card_holder_name">ALI REZAEI</string>
+    <string name="expires_label">EXPIRES</string>
+    <string name="expires_value">12/28</string>
+    <string name="visa">VISA</string>
+    <string name="card_type_label">نوع کارت</string>
+    <string name="card_type_value">ویزا دبیت</string>
+    <string name="status_label">وضعیت</string>
+    <string name="status_active">فعال</string>
+</resources>

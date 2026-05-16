@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Mineo Bank Brand Colors -->
+    <color name="primary">#1C3068</color>
+    <color name="primary_dark">#162554</color>
+    <color name="primary_light">#2E5BA8</color>
+    <color name="accent">#4C9AFF</color>
+
+    <!-- UI Colors -->
+    <color name="background">#F4F6FA</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="text_primary">#1C3068</color>
+    <color name="text_medium">#4A5478</color>
+    <color name="text_secondary">#4A5478</color>
+    <color name="text_light">#9BA5C2</color>
+    <color name="text_hint">#9BA5C2</color>
+    <color name="success">#28C76F</color>
+    <color name="error">#EA5455</color>
+    <color name="divider">#E8EBF3</color>
+    <color name="nav_bg">#1C3068</color>
+    <color name="quick_action_bg">#F4F6FA</color>
+
+    <!-- Material required -->
+    <color name="colorPrimary">#1C3068</color>
+    <color name="colorPrimaryDark">#162554</color>
+    <color name="colorAccent">#1C3068</color>
+</resources>
